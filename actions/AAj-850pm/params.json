@@ -1,0 +1,30 @@
+{
+    "category": "analytics",
+    "display": "PostHog Opt User",
+    "fields": {
+        "AAg": {
+            "caption": "Capturing User (Opt in)",
+            "default_val": false,
+            "doc": "if you want opt the user back in, set this to `true`.",
+            "editor": "DynamicValue",
+            "name": "isOptIn",
+            "rank": 1,
+            "value": "boolean"
+        },
+        "AAh": {
+            "caption": "OPT User Out  _________________________________________________________ ",
+            "doc": "You can use this action to opt users out based on your cookie settings definition (e.g. preferences set via a cookie banner).",
+            "editor": "Label",
+            "name": "opt_user_out",
+            "rank": 0
+        },
+        "AAi": {
+            "caption": "Note _________________________________________________________ ",
+            "doc": "This is also the suggested way to prevent capturing any data from the admin on the page, as well as from team members of your organization. ",
+            "editor": "Label",
+            "name": "note",
+            "rank": 2
+        }
+    },
+    "type": "client_side"
+}

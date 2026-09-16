@@ -1,0 +1,38 @@
+{
+    "category": "analytics",
+    "display": "PostHog - Add Super Properties",
+    "fields": {
+        "AAY": {
+            "caption": "One Time",
+            "default_val": false,
+            "doc": "Furthermore, if you register the same property multiple times, the next event will use the new value of that property. If you want to register a property only once, set this field to `true`.",
+            "editor": "DynamicValue",
+            "name": "isOnce",
+            "rank": 1,
+            "value": "boolean"
+        },
+        "AAZ": {
+            "caption": "Properties",
+            "doc": "You can send parameters with their values.",
+            "editor": "key_value_list",
+            "name": "properties",
+            "rank": 2,
+            "value": "text"
+        },
+        "AAa": {
+            "caption": "Add Super Properties _________________________________________________________ ",
+            "doc": "Super Properties are properties associated with events that are set once and then sent with every capture call",
+            "editor": "Label",
+            "name": "info",
+            "rank": 0
+        },
+        "AAb": {
+            "caption": "Note _________________________________________________________ ",
+            "doc": "However, please note that this does not store properties against the User, only against their events.",
+            "editor": "Label",
+            "name": "info_note",
+            "rank": 3
+        }
+    },
+    "type": "client_side"
+}

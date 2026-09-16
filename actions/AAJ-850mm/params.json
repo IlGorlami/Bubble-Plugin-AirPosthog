@@ -1,0 +1,38 @@
+{
+    "category": "analytics",
+    "display": "PostHog Idenfity User",
+    "fields": {
+        "AAF": {
+            "caption": "Email (Optional)",
+            "doc": "This is optional, you can send more properties with custom names and values by `Set User Property` action.",
+            "editor": "DynamicValue",
+            "name": "email",
+            "optional": true,
+            "rank": 2,
+            "value": "text"
+        },
+        "AAG": {
+            "caption": "User Unique ID",
+            "doc": "The ID can by anything, but is usually the unique ID that bubble add to users.",
+            "editor": "DynamicValue",
+            "name": "uid",
+            "rank": 1,
+            "value": "text"
+        },
+        "AAH": {
+            "caption": "Identifying Users _________________________________________________________ ",
+            "doc": "If a user was previously anonymous (because they hadn't signed up or logged in yet), we'll automatically alias their anonymous ID with their new unique ID. That means all their events from before and after they signed up will be shown under the same user.",
+            "editor": "Label",
+            "name": "user_login",
+            "rank": 0
+        },
+        "AAI": {
+            "caption": "Note _________________________________________________________ ",
+            "doc": "To make sure you understand which user is performing actions within your app, you can identify users at any point. From the moment you make this call, all events will be identified with that distinct id.",
+            "editor": "Label",
+            "name": "identifying_users",
+            "rank": 3
+        }
+    },
+    "type": "client_side"
+}

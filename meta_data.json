@@ -1,0 +1,10 @@
+{
+    "categories": {
+        "0": "analytics",
+        "1": "technical",
+        "2": "customer support"
+    },
+    "license": "private",
+    "name": "Air Posthog",
+    "platforms_new": "web"
+}

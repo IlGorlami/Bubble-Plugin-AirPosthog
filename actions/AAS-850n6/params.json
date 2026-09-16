@@ -1,0 +1,30 @@
+{
+    "category": "analytics",
+    "display": "PostHog - Custom Event",
+    "fields": {
+        "AAP": {
+            "caption": "Properties",
+            "doc": "You can send properties with their values.",
+            "editor": "key_value_list",
+            "name": "properties",
+            "rank": 2,
+            "value": "text"
+        },
+        "AAQ": {
+            "caption": "Event Name",
+            "doc": "Set this event's name.",
+            "editor": "DynamicValue",
+            "name": "event_name",
+            "rank": 1,
+            "value": "text"
+        },
+        "AAR": {
+            "caption": "Send Custom Events _________________________________________________________ ",
+            "doc": "send more context than the default event info that PostHog captures whenever a user does something. In that case, you can send an event with any properties you may wish to add.",
+            "editor": "Label",
+            "name": "info",
+            "rank": 0
+        }
+    },
+    "type": "client_side"
+}

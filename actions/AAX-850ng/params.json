@@ -1,0 +1,38 @@
+{
+    "category": "analytics",
+    "display": "PostHog - Set User Property",
+    "fields": {
+        "AAT": {
+            "caption": "Properties",
+            "doc": "You can send users properties with their values.",
+            "editor": "key_value_list",
+            "name": "properties",
+            "rank": 2,
+            "value": "text"
+        },
+        "AAU": {
+            "caption": "One Time",
+            "default_val": false,
+            "doc": "If you set the same user property multiple times, the next event will use the new value of that property. If you want to set a user property only once, set this field to `true`.",
+            "editor": "DynamicValue",
+            "name": "isOnce",
+            "rank": 1,
+            "value": "boolean"
+        },
+        "AAV": {
+            "caption": "Sending user information _________________________________________________________ ",
+            "doc": "An ID alone might not be enough to work out which user is who within PostHog. That's why it's useful to send over more metadata of the user. At minimum, we recommend sending the email property, which is also what we use to display in PostHog.",
+            "editor": "Label",
+            "name": "info",
+            "rank": 0
+        },
+        "AAW": {
+            "caption": "Note _________________________________________________________ ",
+            "doc": "You can make this call on every page view to make sure this information is up-to-date. Alternatively, you can also do this whenever a user first appears (after signup) or when they change their information.",
+            "editor": "Label",
+            "name": "more_info",
+            "rank": 3
+        }
+    },
+    "type": "client_side"
+}
