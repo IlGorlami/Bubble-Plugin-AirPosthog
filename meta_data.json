@@ -1,10 +1,13 @@
 {
     "categories": {
         "0": "analytics",
-        "1": "technical",
-        "2": "customer support"
+        "1": "technical"
     },
+    "description": "Connect your Bubble web app to PostHog with Air PostHog by Airdev.\n\nTrack custom events, identify users, set user properties, manage shared event properties, and control analytics opt-in and opt-out through Bubble workflows.\n\nAnalyze the collected data in PostHog to understand user behavior, monitor conversion funnels, and measure feature adoption.\n\nRequires a PostHog account and project. PostHog usage and pricing are separate from this plugin.",
+    "image": "//meta-q.cdn.bubble.io/f1789667997530x127203353289923060/exec-b1e4b1e8-bb11-4abd-ab1d-c51953444f60.png",
     "license": "private",
-    "name": "Air Posthog",
-    "platforms_new": "web"
+    "link": "https://posthog.com",
+    "name": "PostHog Event Logger - Light",
+    "platforms_new": "web",
+    "plugin_instructions": "1. Create a PostHog account and project at https://posthog.com.\n2. Install Air PostHog in your Bubble app. In the Plugins tab, enter your PostHog project token and configure the host settings exposed by the plugin.\n3. Use the correct regional API host:\n   - US: https://us.i.posthog.com\n   - EU: https://eu.i.posthog.com\n   - If a separate UI host is requested:\n      - US: https://us.posthog.com\n      - EU: https://eu.posthog.com\n4. Use Identify User after signup or login. Pass Current User's unique id as the user identifier and optionally provide their email.\n5. Use Custom Event at the workflow step you want to track. Enter a consistent event name, such as signup_completed, and supply any relevant event properties.\n6. Use Set User Property to attach information to a user. Use Add Super Properties for properties that should accompany subsequent events, and Remove Super Properties to stop including a named property.\n7. Use Opt User to opt a visitor in or out of analytics capture. This action does not provide a consent banner.\n8. Preview your app, trigger a test event, and confirm it appears in your PostHog project's activity view.\n\nThese actions run in the browser and are intended for web page workflows.\n\nPostHog documentation: https://posthog.com/docs"
 }
