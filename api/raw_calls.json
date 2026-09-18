@@ -1,0 +1,57 @@
+{
+    "calls": {
+        "ADN": {
+            "body": "{\"api_key\": \"<api_key>\", \"event\": \"<event>\", \"distinct_id\": \"<distinct_id>\", \"properties\": <properties_json>} ",
+            "body_params": {
+                "AAB": {
+                    "doc": "PostHog project API key (phc_...). Public by design.",
+                    "key": "api_key",
+                    "private": true,
+                    "value": "phc_wDXRD5F8aLo5gM7SbgW2oXtEzCLX4df2txWHHdn7vNMH"
+                },
+                "AAC": {
+                    "doc": "Event name, for example user_signed_up.",
+                    "key": "event",
+                    "private": true,
+                    "value": "airposthog_init_test"
+                },
+                "AAD": {
+                    "doc": "The user's unique id. Must match the id used by Identify User in the browser.",
+                    "key": "distinct_id",
+                    "private": true,
+                    "value": "airposthog-init"
+                },
+                "AAE": {
+                    "doc": "Event properties as a JSON object, for example {\"plan_count\": 3}. Send {} when there are none.",
+                    "key": "properties_json",
+                    "private": true,
+                    "value": "{\"source\":\"plugin_editor\"}"
+                }
+            },
+            "full_response": "{\"body\":{\"status\":\"Ok\"},\"error\":{\"status_code\":200,\"status_message\":\"OK\",\"body\":\"\\\"{\\\\\\\"status\\\\\\\":\\\\\\\"Ok\\\\\\\"}\\\"\"},\"returned_an_error\":false}",
+            "headers": {
+                "1789756793500x887187760952005800": {
+                    "doc": "Fixed header.",
+                    "key": "Content-Type",
+                    "value": "application/json",
+                    "visibility": "hidden"
+                }
+            },
+            "initialized": true,
+            "method": "post",
+            "must_reinitialize": false,
+            "name": "PostHog - Capture (server)",
+            "publish_as": "action",
+            "rank": 0,
+            "response_schema_truncated": false,
+            "response_time_ms": 654,
+            "ret_value": "api.1789584029121x790051761501765600.plugin_api.ADN",
+            "should_reinitialize": false,
+            "types": "{\"plugin_api.ADN\":{\"caption\":\"PostHog - Capture (server)\",\"fields\":{\"_p_body.status\":{\"ret_btype\":\"text\",\"caption\":\"body status\",\"sample_value\":\"string value\",\"path\":[\"body\",\"status\"]},\"_p_error.status_code\":{\"ret_btype\":\"number\",\"caption\":\"error status_code\",\"sample_value\":200,\"path\":[\"error\",\"status_code\"]},\"_p_error.status_message\":{\"ret_btype\":\"text\",\"caption\":\"error status_message\",\"sample_value\":\"string value\",\"path\":[\"error\",\"status_message\"]},\"_p_error.body\":{\"ret_btype\":\"text\",\"caption\":\"error body\",\"sample_value\":\"string value\",\"path\":[\"error\",\"body\"]},\"_p_returned_an_error\":{\"ret_btype\":\"boolean\",\"caption\":\"returned_an_error\",\"sample_value\":false,\"path\":[\"returned_an_error\"]}}}}",
+            "url": "https://us.i.posthog.com/i/v0/e/",
+            "url_cant_be_private": true,
+            "wrap_error": true
+        }
+    },
+    "human": "PostHog server"
+}

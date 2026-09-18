@@ -7,9 +7,9 @@
             "doc": "You can send properties with their values.",
             "editor": "key_value_list",
             "name": "properties",
+            "optional": true,
             "rank": 2,
-            "value": "text",
-            "optional": true
+            "value": "text"
         },
         "AAQ": {
             "caption": "Event Name",

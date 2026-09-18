@@ -16,9 +16,9 @@
             "doc": "You can send parameters with their values.",
             "editor": "key_value_list",
             "name": "properties",
+            "optional": true,
             "rank": 2,
-            "value": "text",
-            "optional": true
+            "value": "text"
         },
         "AAa": {
             "caption": "Add Super Properties _________________________________________________________ ",
