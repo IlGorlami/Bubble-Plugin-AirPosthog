@@ -1,0 +1,14 @@
+{
+    "category": "analytics",
+    "display": "PostHog - Reset User",
+    "fields": {
+        "AAo": {
+            "caption": "Reset User _________________________________________________________ ",
+            "doc": "Call this on logout. It clears the identified user and the stored super properties, so the next visitor on this browser is tracked as a new anonymous user.",
+            "editor": "Label",
+            "name": "info",
+            "rank": 0
+        }
+    },
+    "type": "client_side"
+}

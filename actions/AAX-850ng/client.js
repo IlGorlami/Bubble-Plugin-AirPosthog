@@ -1,13 +1,8 @@
 function(properties, context) {
-  const arr = properties.properties;
-  const metadata = arr.reduce((acc, curr) => {
-    acc[curr.key] = curr.value;
-    return acc;
-  }, {});
+  var props = AirPosthog.props(properties.properties);
   if (properties.isOnce) {
-      posthog.people.set_once(metadata)
-    
+    posthog.setPersonProperties({}, props);
   } else {
-    posthog.people.set(metadata)
+    posthog.setPersonProperties(props);
   }
 }

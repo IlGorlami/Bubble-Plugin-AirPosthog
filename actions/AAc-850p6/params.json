@@ -17,7 +17,8 @@
             "editor": "key_value_list",
             "name": "properties",
             "rank": 2,
-            "value": "text"
+            "value": "text",
+            "optional": true
         },
         "AAa": {
             "caption": "Add Super Properties _________________________________________________________ ",
@@ -31,7 +32,16 @@
             "doc": "However, please note that this does not store properties against the User, only against their events.",
             "editor": "Label",
             "name": "info_note",
-            "rank": 3
+            "rank": 4
+        },
+        "AAm": {
+            "caption": "Properties JSON",
+            "doc": "Optional. A JSON object as text, for example {\"plan_count\": 3, \"is_trial\": true}. Unlike the key/value list, JSON keeps numbers, booleans and lists typed. Merged over the Properties list; invalid JSON is ignored with a console warning.",
+            "editor": "DynamicValue",
+            "name": "properties_json",
+            "optional": true,
+            "rank": 3,
+            "value": "text"
         }
     },
     "type": "client_side"

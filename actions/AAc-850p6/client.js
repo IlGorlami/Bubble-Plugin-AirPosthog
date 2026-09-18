@@ -1,13 +1,8 @@
 function(properties, context) {
-
-  const arr = properties.properties;
-  const metadata = arr.reduce((acc, curr) => {
-    acc[curr.key] = curr.value;
-    return acc;
-  }, {});
+  var props = AirPosthog.props(properties.properties, properties.properties_json);
   if (properties.isOnce) {
-    posthog.register_once(metadata)
+    posthog.register_once(props);
   } else {
-    posthog.register(metadata)
+    posthog.register(props);
   }
 }

@@ -1,3 +1,3 @@
 function(properties, context) {
-  posthog.unregister(properties.propertyName)
+  posthog.unregister(properties.propertyname);
 }

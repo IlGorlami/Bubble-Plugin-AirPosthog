@@ -12,7 +12,7 @@
         },
         "AAe": {
             "caption": "Removing stored Super Properties _________________________________________________________ ",
-            "doc": "In order to stop sending a Super Property with events and remove the cookie, you can use this action with that Super Property's name (key).",
+            "doc": "To stop sending a Super Property with events and remove it from the browser's stored PostHog data, use this action with that Super Property's name (key).",
             "editor": "Label",
             "name": "info",
             "rank": 0
