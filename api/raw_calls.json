@@ -7,7 +7,7 @@
                     "doc": "PostHog project API key (phc_...). Public by design.",
                     "key": "api_key",
                     "private": true,
-                    "value": "phc_wDXRD5F8aLo5gM7SbgW2oXtEzCLX4df2txWHHdn7vNMH"
+                    "visibility": "secret"
                 },
                 "AAC": {
                     "doc": "Event name, for example user_signed_up.",
